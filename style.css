@@ -62,23 +62,26 @@ body{
 /* Akhir Navigasi Kiri */
 
 /* Awal Navigasi Kanan */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.vertikal2 ul {
-	  width: 60px; /* Mengubah lebar saat layar lebih kecil */
-	  /*margin: 20px;*/ /* Sesuaikan margin untuk layar kecil */
+	  width: 60px; /* Ubah lebar saat layar lebih kecil */
 	}
-	
+  
 	.vertikal2 .ikon {
 	  max-width: 30px; /* Sesuaikan lebar ikon saat layar lebih kecil */
 	}
   }
   
-  @media screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
 	.vertikal2 ul {
 	  width: 100%; /* Gunakan lebar penuh saat layar sangat kecil */
 	  border-radius: 0; /* Hapus sudut bulat saat layar sangat kecil */
 	  margin: 0; /* Hapus margin */
 	  padding: 10px; /* Berikan sedikit padding */
+	  right: 0; /* Menempelkan ke kanan */
+	  left: 0; /* Menghilangkan posisi kiri agar menyesuaikan ke kanan */
+	  border-bottom-left-radius: 0; /* Menyesuaikan border-radius pada bagian kanan */
+	  border-top-left-radius: 0; /* Menyesuaikan border-radius pada bagian kanan */
 	}
   
 	.vertikal2 .ikon {
