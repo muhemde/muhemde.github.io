@@ -12,7 +12,29 @@ body{
     margin-bottom: 30px;
 }
 /* Awal Navigasi Kiri */
-.vertikal1 ul {
+@media only screen and (max-width: 768px) {
+	.vertikal1 ul {
+	  width: 60px; /* Ubah lebar saat layar lebih kecil */
+	}
+  
+	.vertikal1 .icon {
+	  max-width: 30px; /* Sesuaikan lebar ikon saat layar lebih kecil */
+	}
+  }
+  
+  @media only screen and (max-width: 480px) {
+	.vertikal1 ul {
+	  width: 100%; /* Gunakan lebar penuh saat layar sangat kecil */
+	  border-radius: 0; /* Hapus sudut bulat saat layar sangat kecil */
+	  margin: 0; /* Hapus margin */
+	  padding: 10px; /* Berikan sedikit padding */
+	}
+  
+	.vertikal1 .icon {
+	  max-width: 100%; /* Gunakan lebar penuh untuk ikon saat layar sangat kecil */
+	}
+  }
+/*.vertikal1 ul {
 	list-style: none;
 	width: 80px;
 	background-color: rgba(253, 252, 252, 0.062);
@@ -36,7 +58,7 @@ body{
 	margin: -5px;
 	max-width: 40px;
 	color: rgba(7, 7, 7, 0.089);
-}
+}*/
 /* Akhir Navigasi Kiri */
 
 /* Awal Navigasi Kanan */
