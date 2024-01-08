@@ -65,7 +65,7 @@ body{
 @media screen and (max-width: 768px) {
 	.vertikal2 ul {
 	  width: 60px; /* Mengubah lebar saat layar lebih kecil */
-	  margin: 20px; /* Sesuaikan margin untuk layar kecil */
+	  /*margin: 20px;*/ /* Sesuaikan margin untuk layar kecil */
 	}
 	
 	.vertikal2 .ikon {
